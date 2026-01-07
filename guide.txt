@@ -1,0 +1,30 @@
+npx create-next-app@latest prisma-sqlite
+cd prisma-sqlite
+npm run dev
+
+npm install prisma --save-dev
+npm install @prisma/client
+
+npx prisma init
+
+
+
+
+npx prisma migrate dev --name init
+
+
+prisma-sqlite/
+├── app/
+│   └── api/
+│       └── users/
+│           └── route.js
+├── lib/
+│   └── prisma.js
+├── prisma/
+│   └── schema.prisma
+├── dev.db
+└── .env
+
+
+npx prisma studio
+
